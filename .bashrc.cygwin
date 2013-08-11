@@ -1,0 +1,255 @@
+# To the extent possible under law, the author(s) have dedicated all 
+# copyright and related and neighboring rights to this software to the 
+# public domain worldwide. This software is distributed without any warranty. 
+# You should have received a copy of the CC0 Public Domain Dedication along 
+# with this software. 
+# If not, see <http://creativecommons.org/publicdomain/zero/1.0/>. 
+
+# base-files version 4.1-1
+
+# ~/.bashrc: executed by bash(1) for interactive shells.
+
+# The latest version as installed by the Cygwin Setup program can
+# always be found at /etc/defaults/etc/skel/.bashrc
+
+# Modifying /etc/skel/.bashrc directly will prevent
+# setup from updating it.
+
+# The copy in your home directory (~/.bashrc) is yours, please
+# feel free to customise it to create a shell
+# environment to your liking.  If you feel a change
+# would be benifitial to all, please feel free to send
+# a patch to the cygwin mailing list.
+
+# User dependent .bashrc file
+
+# If not running interactively, don't do anything
+[[ "$-" != *i* ]] && return
+
+# Shell Options
+#
+# See man bash for more options...
+#
+# Don't wait for job termination notification
+# set -o notify
+#
+# Don't use ^D to exit
+# set -o ignoreeof
+#
+# Use case-insensitive filename globbing
+# shopt -s nocaseglob
+#
+# Make bash append rather than overwrite the history on disk
+# shopt -s histappend
+#
+# When changing directory small typos can be ignored by bash
+# for example, cd /vr/lgo/apaache would find /var/log/apache
+# shopt -s cdspell
+
+# Completion options
+#
+# These completion tuning parameters change the default behavior of bash_completion:
+#
+# Define to access remotely checked-out files over passwordless ssh for CVS
+# COMP_CVS_REMOTE=1
+#
+# Define to avoid stripping description in --option=description of './configure --help'
+# COMP_CONFIGURE_HINTS=1
+#
+# Define to avoid flattening internal contents of tar files
+# COMP_TAR_INTERNAL_PATHS=1
+#
+# Uncomment to turn on programmable completion enhancements.
+# Any completions you add in ~/.bash_completion are sourced last.
+# [[ -f /etc/bash_completion ]] && . /etc/bash_completion
+
+# History Options
+#
+# Don't put duplicate lines in the history.
+# export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
+#
+# Ignore some controlling instructions
+# HISTIGNORE is a colon-delimited list of patterns which should be excluded.
+# The '&' is a special pattern which suppresses duplicate entries.
+# export HISTIGNORE=$'[ \t]*:&:[fb]g:exit'
+# export HISTIGNORE=$'[ \t]*:&:[fb]g:exit:ls' # Ignore the ls command as well
+#
+# Whenever displaying the prompt, write the previous line to disk
+# export PROMPT_COMMAND="history -a"
+
+# Aliases
+#
+# Some people use a different file for aliases
+# if [ -f "${HOME}/.bash_aliases" ]; then
+#   source "${HOME}/.bash_aliases"
+# fi
+#
+# Some example alias instructions
+# If these are enabled they will be used instead of any instructions
+# they may mask.  For example, alias rm='rm -i' will mask the rm
+# application.  To override the alias instruction use a \ before, ie
+# \rm will call the real rm not the alias.
+#
+# Interactive operation...
+# alias rm='rm -i'
+# alias cp='cp -i'
+# alias mv='mv -i'
+#
+# Default to human readable figures
+# alias df='df -h'
+# alias du='du -h'
+#
+# Misc :)
+# alias less='less -r'                          # raw control characters
+# alias whence='type -a'                        # where, of a sort
+# alias grep='grep --color'                     # show differences in colour
+# alias egrep='egrep --color=auto'              # show differences in colour
+# alias fgrep='fgrep --color=auto'              # show differences in colour
+#
+# Some shortcuts for different directory listings
+# alias ls='ls -hF --color=tty'                 # classify files in colour
+# alias dir='ls --color=auto --format=vertical'
+# alias vdir='ls --color=auto --format=long'
+# alias ll='ls -l'                              # long list
+# alias la='ls -A'                              # all but . and ..
+# alias l='ls -CF'                              #
+
+# Umask
+#
+# /etc/profile sets 022, removing write perms to group + others.
+# Set a more restrictive umask: i.e. no exec perms for others:
+# umask 027
+# Paranoid: neither group nor others have any perms:
+# umask 077
+
+# Functions
+#
+# Some people use a different file for functions
+# if [ -f "${HOME}/.bash_functions" ]; then
+#   source "${HOME}/.bash_functions"
+# fi
+#
+# Some example functions:
+#
+# a) function settitle
+# settitle () 
+# { 
+#   echo -ne "\e]2;$@\a\e]1;$@\a"; 
+# }
+# 
+# b) function cd_func
+# This function defines a 'cd' replacement function capable of keeping, 
+# displaying and accessing history of visited directories, up to 10 entries.
+# To use it, uncomment it, source this file and try 'cd --'.
+# acd_func 1.0.5, 10-nov-2004
+# Petar Marinov, http:/geocities.com/h2428, this is public domain
+# cd_func ()
+# {
+#   local x2 the_new_dir adir index
+#   local -i cnt
+# 
+#   if [[ $1 ==  "--" ]]; then
+#     dirs -v
+#     return 0
+#   fi
+# 
+#   the_new_dir=$1
+#   [[ -z $1 ]] && the_new_dir=$HOME
+# 
+#   if [[ ${the_new_dir:0:1} == '-' ]]; then
+#     #
+#     # Extract dir N from dirs
+#     index=${the_new_dir:1}
+#     [[ -z $index ]] && index=1
+#     adir=$(dirs +$index)
+#     [[ -z $adir ]] && return 1
+#     the_new_dir=$adir
+#   fi
+# 
+#   #
+#   # '~' has to be substituted by ${HOME}
+#   [[ ${the_new_dir:0:1} == '~' ]] && the_new_dir="${HOME}${the_new_dir:1}"
+# 
+#   #
+#   # Now change to the new dir and add to the top of the stack
+#   pushd "${the_new_dir}" > /dev/null
+#   [[ $? -ne 0 ]] && return 1
+#   the_new_dir=$(pwd)
+# 
+#   #
+#   # Trim down everything beyond 11th entry
+#   popd -n +11 2>/dev/null 1>/dev/null
+# 
+#   #
+#   # Remove any other occurence of this dir, skipping the top of the stack
+#   for ((cnt=1; cnt <= 10; cnt++)); do
+#     x2=$(dirs +${cnt} 2>/dev/null)
+#     [[ $? -ne 0 ]] && return 0
+#     [[ ${x2:0:1} == '~' ]] && x2="${HOME}${x2:1}"
+#     if [[ "${x2}" == "${the_new_dir}" ]]; then
+#       popd -n +$cnt 2>/dev/null 1>/dev/null
+#       cnt=cnt-1
+#     fi
+#   done
+# 
+#   return 0
+# }
+# 
+# alias cd=cd_func
+
+
+
+########################################################################
+## GREENPLUM SNE DBMS
+########################################################################
+#source /usr/local/greenplum-db/greenplum_path.sh
+#export GPBASEDIR=/usr/local/greenplum-db
+#export MASTERBASEDIR=/data/gpdb_master
+#export SEGBASEDIR=/data/gpdb_p1
+#export MIRBASEDIR=/data/gpdb_m1
+#export MASTER_DATA_DIRECTORY=/data/gpdb_master/gpsne-1
+
+
+########################################################################
+## GREENPLUM MNE DBMS
+########################################################################
+GPHOME=/usr/local/greenplum-db
+export GPHOME
+MASTER_DATA_DIRECTORY=/data/master/gpseg-1
+export MASTER_DATA_DIRECTORY
+
+source $GPHOME/greenplum_path.sh
+
+GPPERFMONHOME=/usr/local/greenplum-cc-web
+source $GPPERFMONHOME/gpcc_path.sh
+
+PGDATABASE=hanwha
+export PGDATABASE
+
+source ~/bmt_admin/shl/env.profile
+########################################################################
+### alias
+alias all='gpssh -h mdw -h smdw -h sdw1 -h sdw2 -h sdw3 -h sdw4 -h sdw5 -h sdw6 -h sdw7 -h sdw8'
+alias all-seg='gpssh -h sdw1 -h sdw2 -h sdw3 -h sdw4 -h sdw5 -h sdw6 -h sdw7 -h sdw8'
+alias cq='psql -c "select now()-query_start, procpid, usename, sess_id, current_query from pg_stat_activity where current_query not like '\''%IDLE%'\'' order by 1 desc;"'
+alias dq='psql -c "select now()-query_start as run_time, rsqname,usename, client_addr, waiting, procpid, sess_id from pg_stat_activity, pg_roles, pg_resqueue where pg_stat_activity.usename = pg_roles.rolname and pg_roles.rolresqueue = pg_resqueue.oid and current_query not like '\''%IDLE%'\'' order by 5,1 ;"'
+alias invalid='psql -c "SELECT * from gp_configuration where valid='\''f'\'';"'
+alias is='psql -c " SELECT now()-query_start, usename, procpid, sess_id, current_query from pg_stat_activity where current_query like '\''<IDLE>'\'' order by 1 desc;"'
+alias ll='ls -ltr'
+alias locks='psql -c " SELECT pid, relname, locktype, mode from pg_locks, pg_class where relation=oid and relname not like '\''pg_%'\'' order by 3;"'
+alias lt='psql -c "SELECT distinct w.locktype,w.relation::regclass AS relation, w.mode,w.pid AS waiting_pid,other.pid AS other_pid FROM pg_catalog.pg_locks AS w JOIN pg_catalog.pg_stat_activity AS w_stm ON (w_stm.procpid = w.pid) JOIN pg_catalog.pg_locks AS other ON ((w.DATABASE = other.DATABASE AND w.relation  = other.relation) OR w.transactionid = other.transactionid) JOIN pg_catalog.pg_stat_activity AS other_stm ON (other_stm.procpid = other.pid) WHERE NOT w.granted AND w.pid <> other.pid; "'
+alias na='psql -c "select count(*) from gp_toolkit.gp_stats_missing a   left outer join pg_partitions b    on a.smischema = b.schemaname   and a.smitable = b.tablename where b.tablename is null and smischema not in ('\''mdw_log'\'', '\''tmp'\'') order by 1 ;" '
+alias nan='psql -tc "select '\''analyze '\''||smischema||'\''.'\''||smitable||'\'';'\'' from gp_toolkit.gp_stats_missing a   left outer join pg_partitions b    on a.smischema = b.schemaname   and a.smitable = b.tablename where b.tablename is null and smischema not in ('\''mdw_log'\'', '\''tmp'\'') order by 1 ;" '
+alias pgoption='PGOPTIONS="-c gp_session_role=utility" psql -p 5432'
+alias qq='psql -c " select now()-query_start, usename, client_addr, waiting, procpid, sess_id from pg_stat_activity  where current_query not like '\''%IDLE%'\'' order by 4, 1 desc;"'
+alias rq='psql -c " select count(*) from pg_stat_activity where current_query not like '\''%IDLE%'\'' and waiting='\''f'\'';"'
+alias rs='psql -c " select a.rsqname, a.rsqcountlimit as countlimit, a.rsqcountvalue as countvalue, a.rsqwaiters as waiters, a.rsqcostlimit as costlimit, a.rsqcostvalue as costvalue, b.rsqignorecostlimit as ignorecostlimit, b.rsqovercommit as overcommit from pg_resqueue_status a, pg_resqueue b where a.rsqname = b.rsqname order by 1;"'
+alias rss='psql -c " select a.rsqname, a.rsqcountlimit as countlimit, a.rsqcountvalue as countvalue, a.rsqwaiters as waiters, a.rsqholders as running ,a.rsqcostlimit as costlimit, a.rsqcostvalue as costvalue, b.rsqignorecostlimit as ignorecostlimit, b.rsqovercommit as overcommit from pg_resqueue_status a, pg_resqueue b where a.rsqname =b.rsqname order by 1;"'
+alias rsh='psql -c " SELECT a.rsqname,a.rsqcountlimit,a.rsqcountvalue,a.rsqwaiters,a.rsqholders,a.rsqcostlimit,a.rsqcostvalue,a.rsqmemorylimit,a.rsqmemoryvalue,b.rsqignorecostlimit,b.rsqovercommit,c.ressetting FROM gp_toolkit.gp_resqueue_status a INNER JOIN pg_resqueue b ON b.rsqname = a.rsqname INNER JOIN pg_resqueue_attributes c ON c.rsqname = a.rsqname AND c.restypid = 5 ORDER BY 1;"'
+
+alias sp='source /home/gpadmin/.bash_profile'
+alias sq='psql -c " select * from pg_resqueue order by 1;"'
+alias tq='psql -c " select count(*) from pg_stat_activity;"'
+alias ts='psql -c "select n.nspname from pg_namespace n where nspname not in (select '\''pg_temp_'\''||sess_id from pg_stat_activity) and nspname  like '\''pg_temp%'\'';"'
+
+alias mkquery='psql -c " select now()-query_start, usename, client_addr, case when waiting = '\'f\'' then '\'running\'' else '\'watting\'' end as waitting, procpid, sess_id from pg_stat_activity  where current_query not like '\''%IDLE%'\'' order by 4, 1 desc;"'
