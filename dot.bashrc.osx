@@ -1,0 +1,7 @@
+#!/bin/bash
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/sn2ro/.gvm/bin/gvm-init.sh" ]] && source "/Users/sn2ro/.gvm/bin/gvm-init.sh"
+
+
+##Hakchin##
+export PATH=/usr/local/Cellar/go-app-engine-64/1.9.23/share/go-app-engine-64:$PATH
