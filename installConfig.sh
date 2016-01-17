@@ -7,6 +7,7 @@ brew install postgres
 #
 # Some cask packages that I like.
 #
+brew cask install pgadmin3
 brew cask install aquamacs
 brew cask install dropbox
 #brew cask install textexpander
