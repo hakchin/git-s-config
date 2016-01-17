@@ -3,6 +3,7 @@
 # Brew packages that I use alot.
 #
 brew install wget
+brew install postgres
 #
 # Some cask packages that I like.
 #
