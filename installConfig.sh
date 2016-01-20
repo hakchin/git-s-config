@@ -17,3 +17,4 @@ brew cask install google-chrome
 brew cask install inkscape
 #brew cask install xquartz
 brew cask install virtualbox
+brew cask install virtualbox-extension-pack
