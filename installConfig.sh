@@ -13,8 +13,10 @@ brew cask install dropbox
 #brew cask install textexpander
 #brew cask install macvim
 brew cask install gimp
-brew cask install google-chrome
 brew cask install inkscape
 #brew cask install xquartz
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
+#.. browser
+brew cask install google-chrome
+brew cask install opera
