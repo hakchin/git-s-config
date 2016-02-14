@@ -20,3 +20,5 @@ brew cask install virtualbox-extension-pack
 #.. browser
 brew cask install google-chrome
 brew cask install opera
+#.. dev
+brew cask install eclipse-modeling
