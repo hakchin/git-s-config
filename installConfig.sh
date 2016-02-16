@@ -4,6 +4,7 @@
 #
 brew install wget
 brew install postgres
+brew install bash
 #
 # Some cask packages that I like.
 #
