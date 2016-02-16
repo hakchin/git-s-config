@@ -11,7 +11,6 @@ brew cask install pgadmin3
 brew cask install aquamacs
 brew cask install dropbox
 #brew cask install textexpander
-#brew cask install macvim
 brew cask install gimp
 brew cask install inkscape
 #brew cask install xquartz
@@ -22,3 +21,5 @@ brew cask install google-chrome
 brew cask install opera
 #.. dev
 brew cask install eclipse-modeling
+#brew cask install macvim
+brew cask install brackets
