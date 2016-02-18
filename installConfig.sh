@@ -5,6 +5,8 @@
 brew install wget
 brew install postgres
 brew install bash
+brew install cliclick
+brew install bash-git-prompt
 #
 # Some cask packages that I like.
 #
