@@ -7,6 +7,7 @@ brew install postgres
 brew install bash
 brew install cliclick
 brew install bash-git-prompt
+brew cask install iterm2
 #
 # Some cask packages that I like.
 #
