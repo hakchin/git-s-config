@@ -28,4 +28,3 @@ brew install vimpager
 brew cask install atom
 brew cask install brackets
 brew cask install liclipse
-brew cask install aquamacs
