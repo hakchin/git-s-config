@@ -5,7 +5,6 @@
 brew install wget
 brew install postgres
 brew install cliclick
-brew install gnuplot
 brew cask install iterm2
 #
 # Some cask packages that I like.
