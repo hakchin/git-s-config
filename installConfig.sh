@@ -27,4 +27,3 @@ brew install bash-git-prompt
 brew install vimpager
 brew cask install brackets
 brew cask install liclipse
-brew cask install visual-studio-code
