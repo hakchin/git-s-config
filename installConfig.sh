@@ -26,5 +26,5 @@ brew install bash-git-prompt
 #brew cask install macvim
 brew install vimpager
 brew cask install brackets
-brew cask install liclipse
 brew cask install atom
+brew cask install eclipse-java
