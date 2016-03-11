@@ -2,6 +2,7 @@
 #
 # Brew packages that I use alot.
 #
+brew install uncrustify
 brew install wget
 brew install postgres
 brew install cliclick
