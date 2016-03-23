@@ -10,6 +10,7 @@ brew cask install iterm2
 #
 # Some cask packages that I like.
 #
+brew install pgcli
 brew cask install pgadmin3
 brew cask install dropbox
 #brew cask install textexpander
