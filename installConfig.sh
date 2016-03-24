@@ -5,6 +5,7 @@
 brew install uncrustify
 brew install wget
 brew install postgres
+brew install pandoc
 brew install cliclick
 brew cask install iterm2
 #
