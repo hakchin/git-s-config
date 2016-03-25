@@ -26,7 +26,10 @@ brew cask install opera
 #. development
 brew install bash
 brew install bash-git-prompt
-#brew cask install macvim
+
+#. editor
+brew install vim --with-lua --override-system-vi
+brew install macvim --with-cscope --with-lua
 brew install vimpager
 brew cask install brackets
 brew cask install atom
