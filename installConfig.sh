@@ -4,20 +4,16 @@
 #
 brew install uncrustify
 brew install wget
-brew install postgres
 brew install pandoc
 brew install cliclick
-brew cask install iterm2
 #
 # Some cask packages that I like.
 #
+#brew cask install textexpander
+#brew cask install xquartz
 brew install pgcli
 brew cask install pgadmin3
 brew cask install dropbox
-#brew cask install textexpander
-brew cask install gimp
-brew cask install inkscape
-#brew cask install xquartz
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 #. browser
