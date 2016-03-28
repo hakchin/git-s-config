@@ -2,15 +2,17 @@
 #
 # Brew packages that I use alot.
 #
-brew install uncrustify
-brew install wget
-brew install pandoc
+brew install vimpager
+brew cask install brackets
 brew install cliclick
+brew install pandoc
 #
 # Some cask packages that I like.
 #
 #brew cask install textexpander
 #brew cask install xquartz
+brew install wget
+brew install uncrustify
 brew install pgcli
 brew cask install pgadmin3
 brew cask install dropbox
@@ -26,7 +28,5 @@ brew install bash-git-prompt
 #. editor
 brew install vim --with-lua --override-system-vi
 brew install macvim --with-cscope --with-lua
-brew install vimpager
-brew cask install brackets
 brew cask install atom
 brew cask install eclipse-java
