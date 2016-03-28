@@ -18,6 +18,7 @@ brew cask install pgadmin3
 brew cask install dropbox
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
+brew cask install java
 #. browser
 brew cask install google-chrome
 brew cask install opera
