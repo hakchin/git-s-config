@@ -30,6 +30,7 @@ brew cask install pgadmin3
 brew cask install java
 
 #. editor
+brew cask install mactex
 brew install vim --with-lua --override-system-vi
 brew install macvim --with-cscope --with-lua
 brew cask install atom
