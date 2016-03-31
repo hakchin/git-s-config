@@ -21,14 +21,14 @@ brew cask install google-chrome
 brew cask install opera
 
 #. development
-brew cask install google-cloud-sdk
-brew install wget
+brew cask install java
 brew install uncrustify
-brew install bash
-brew install bash-git-prompt
+brew install wget
 brew install pgcli
 brew cask install pgadmin3
-brew cask install java
+brew cask install google-cloud-sdk
+brew install bash
+brew install bash-git-prompt
 
 #. editor
 brew cask install mactex
