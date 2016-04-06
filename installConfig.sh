@@ -40,3 +40,4 @@ brew cask install eclipse-java
 brew cask install adobe-digital-editions
 brew cask install adobe-reader
 brew cask install adobe-creative-cloud
+brew cask install evernote
