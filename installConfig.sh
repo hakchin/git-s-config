@@ -14,7 +14,7 @@ brew install pandoc
 brew cask install dropbox
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
-#brew cask install hyperdock
+brew cask install piezo#brew cask install hyperdock
 
 #. browser
 brew cask install google-chrome
