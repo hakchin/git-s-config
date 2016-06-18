@@ -2,10 +2,10 @@
 #
 # Brew packages that I use alot.
 #
-brew install vimpager
-brew cask install brackets
-brew install cliclick
-brew install pandoc
+#brew install vimpager
+#brew cask install brackets
+#brew install cliclick
+#brew install pandoc
 
 #. Cloud Storage and Virtual Environment
 
