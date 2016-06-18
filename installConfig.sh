@@ -3,7 +3,6 @@
 # Brew packages that I use alot.
 #
 #brew install vimpager
-#brew cask install brackets
 #brew install cliclick
 #brew install pandoc
 
@@ -32,11 +31,12 @@ brew install bash
 brew install bash-git-prompt
 
 #. editor
-brew cask install mactex
-brew cask install texpad
 brew install vim --with-lua --override-system-vi
 brew install macvim --with-cscope --with-lua
 brew cask install atom
+brew cask install brackets
+brew cask install mactex
+brew cask install texpad
 brew cask install eclipse-java
 brew cask install adobe-digital-editions
 brew cask install adobe-reader
