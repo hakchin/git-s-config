@@ -33,8 +33,8 @@ brew install bash-git-prompt
 #. editor
 brew install vim --with-lua --override-system-vi
 brew install macvim --with-cscope --with-lua
-brew cask install atom
-brew cask install brackets
+#brew cask install atom
+#brew cask install brackets
 brew cask install mactex
 brew cask install texpad
 brew cask install eclipse-java
