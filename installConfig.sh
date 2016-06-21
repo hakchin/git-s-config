@@ -21,6 +21,7 @@ brew cask install google-chrome
 brew cask install opera
 
 #. development
+brew cask install iterm2
 brew cask install java
 brew install uncrustify
 brew install wget
