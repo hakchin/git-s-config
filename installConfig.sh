@@ -46,4 +46,3 @@ brew cask install adobe-creative-cloud
 brew cask install evernote
 brew cask install xquartz
 brew cask install inkscape
-brew install gimp
