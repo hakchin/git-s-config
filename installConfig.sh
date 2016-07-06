@@ -8,7 +8,6 @@
 
 #. Cloud Storage and Virtual Environment
 
-#brew cask install textexpander
 #brew cask install xquartz
 brew cask install dropbox
 brew cask install virtualbox
