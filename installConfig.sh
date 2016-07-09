@@ -33,16 +33,16 @@ brew install bash
 brew install bash-git-prompt
 
 #. editor
-brew install vim --with-lua --override-system-vi
-brew install macvim --with-cscope --with-lua
 brew cask install atom
 #brew cask install brackets
 brew cask install mactex
 brew cask install texpad
 brew cask install eclipse-java
+brew cask install evernote
+brew cask install inkscape
+#brew cask install gimp
+brew install vim --with-lua --override-system-vi
+brew install macvim --with-cscope --with-lua
 brew cask install adobe-digital-editions
 brew cask install adobe-reader
 brew cask install adobe-creative-cloud
-brew cask install evernote
-brew cask install inkscape
-brew cask install gimp
