@@ -44,5 +44,4 @@ brew cask install inkscape
 brew install vim --with-lua --override-system-vi
 brew install macvim --with-cscope --with-lua
 brew cask install adobe-digital-editions
-brew cask install adobe-reader
 brew cask install adobe-creative-cloud
