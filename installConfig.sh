@@ -18,7 +18,7 @@ brew cask install teamviewer
 
 #. browser
 brew cask install google-chrome
-brew cask install opera
+brew cask install firefox
 
 #. development
 brew cask install github-desktop
