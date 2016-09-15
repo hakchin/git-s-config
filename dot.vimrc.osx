@@ -20,10 +20,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Chiel92/vim-autoformat'
 
 " plugin for indent guides
-"Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " plugin for auto pairs
-"Plugin 'jiangmiao/auto-pairs'
+Plugin 'jiangmiao/auto-pairs'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,7 +56,7 @@ set tabstop=4
 
 " always uses spaces instead of tab characters
 set expandtab
-
+"
 " size of an "indent"
 set shiftwidth=4
 " END of Haichin's Tab and Indent Setting
