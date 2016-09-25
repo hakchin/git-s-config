@@ -41,7 +41,7 @@ brew cask install texpad
 brew cask install evernote
 #brew cask install inkscape
 #brew cask install gimp
-brew install vim --with-lua --override-system-vi
+brew install vim --with-lua --with-override-system-vi
 brew install macvim --with-cscope --with-lua
 brew cask install adobe-digital-editions
 brew cask install adobe-creative-cloud
