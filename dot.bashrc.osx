@@ -11,3 +11,8 @@ fi
 ## bgn of google app engine
 export PATH=/usr/local/Cellar/go-app-engine-64/1.9.23/share/go-app-engine-64:$PATH
 ## end of google app engine
+
+## bgn of for google-cloud-sdk
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+## end of for google-cloud-sdk
