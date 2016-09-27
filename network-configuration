@@ -1,0 +1,42 @@
+========================================================================
+Network Configuration
+========================================================================
+
+------------------------------------------------------------------------
+ubuntu
+------------------------------------------------------------------------
+. location : /etc/network/interfaces
+
+. contentes of "interfaces"
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto enp4s0f0
+## bgn of commented for static ip
+#iface enp4s0f0 inet dhcp
+## end of commented for static ip
+
+## bgn of added for static ip
+iface enp4s0f0 inet static
+address 192.168.0.50
+netmask 255.255.255.0
+gateway 192.168.0.1
+dns-nameservers 8.8.8.8 8.8.4.4
+## end of added for static ip
+
+. location : /etc/network/interfaces
+
+
+
+
+------------------------------------------------------------------------
+macOS
+------------------------------------------------------------------------
+
