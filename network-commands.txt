@@ -1,2 +1,17 @@
-. port forwarding
+----------------------------------------------------------------
+port forwarding (firewall bypass)
+----------------------------------------------------------------
+. 어쩌구
 ssh -L 192.168.0.50:8080:10.150.22.69:8080 root@10.150.22.69
+
+----------------------------------------------------------------
+port forwarding
+----------------------------------------------------------------
+. 어쩌구..
+sudo iptables -t nat -A PREROUTING -p tcp -i eth0 --dport 8080 -j DNAT \
+    --to-destination 10.150.22.69:8080
+
+. 아래와 같이 하여 성공하였다.
+$ sudo iptables --table nat --append PREROUTING --in-interface eth0 --protocol tcp --dport 8080 --jump DNAT --to-destination 10.1
+50.22.69:8080
+$ iptables-save
