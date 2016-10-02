@@ -9,8 +9,8 @@ port forwarding
 ----------------------------------------------------------------
 . 어쩌구..
 sudo iptables -t nat -A PREROUTING -p tcp -i eth0 --dport 8080 -j DNAT \
-    --to-destination 10.150.22.69:8080
+    --to-destination 10.0.0.88:8080
 
 . 아래와 같이 하여 성공하였다. (lxd on ubuntu)
-$ sudo iptables --table nat --append PREROUTING --in-interface enp4s0f0 --protocol tcp --dport 8080 --jump DNAT --to-destination 10.6.29.154:8080
+$ sudo iptables --table nat --append PREROUTING --in-interface enp4s0f0 --protocol tcp --dport 8080 --jump DNAT --to-destination 10.0.0.88:8080
 $ iptables-save
