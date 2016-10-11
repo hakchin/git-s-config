@@ -24,6 +24,12 @@ Plugin 'nathanaelkane/vim-indent-guides'
 
 " plugin for auto pairs
 Plugin 'jiangmiao/auto-pairs'
+
+" plugin for go development
+Plugin 'fatih/vim-go'
+
+" plugin for vimtex
+Plugin 'lervag/vimtex'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
