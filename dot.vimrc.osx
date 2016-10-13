@@ -62,8 +62,11 @@ set tabstop=4
 
 " always uses spaces instead of tab characters
 set expandtab
-"
+
 " size of an "indent"
 set shiftwidth=4
+
+" highlight search matches
+set hlsearch
 " END of Haichin's Tab and Indent Setting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
