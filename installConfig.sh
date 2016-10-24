@@ -45,3 +45,10 @@ brew install vim --with-lua --with-override-system-vi
 brew install macvim --with-cscope --with-lua
 brew cask install adobe-digital-editions
 brew cask install adobe-creative-cloud
+
+#.. emacs
+brew install emacs --HEAD --use-git-head  --with-gnutls --with-rsvg --with-imagemagick --srgb --with-modules
+brew install jade
+brew install suggest-emacs
+
+
