@@ -56,6 +56,7 @@ filetype plugin indent on    " required
 :set ic
 :set clipboard=unnamed
 :set laststatus=2
+:set conceallevel=0    "There are LaTeX file view problems. See :help tex-conceal for the full explanation of that feature.
 
 " BGN of Haichin's Tab and Indent Setting
 " always uses spaces instead of tab characters
