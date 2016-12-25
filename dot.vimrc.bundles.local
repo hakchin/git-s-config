@@ -31,6 +31,7 @@ UnBundle 'groenewege/vim-less'
 UnBundle 'briancollins/vim-jst'
 UnBundle 'tpope/vim-rails'
 UnBundle 'tpope/vim-cucumber'
+UnBundle 'mattn/emmet-vim'   "ctrl+y function slows when it is installed.
 "Bundle 'Chiel92/vim-autoformat'
 Bundle 'fatih/vim-go'
 "Bundle 'lervag/vimtex'
