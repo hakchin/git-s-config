@@ -9,7 +9,7 @@ UnBundle 'jistr/vim-nerdtree-tabs'
 UnBundle 'klen/python-mode'
 UnBundle 'majutsushi/tagbar'
 UnBundle 'MarcWeber/vim-addon-mw-utils'
-UnBundle 'mattn/emmet-vim'   "ctrl+y function slows when it is installed.
+UnBundle 'mattn/emmet-vim'      "ctrl+y function slows when it is installed.
 UnBundle 'mattn/gist-vim'
 UnBundle 'mattn/webapi-vim'
 UnBundle 'python_match.vim'
@@ -21,6 +21,7 @@ UnBundle 'reedes/vim-wordy'
 UnBundle 'rust-lang/rust.vim'
 UnBundle 'scrooloose/nerdcommenter'
 UnBundle 'scrooloose/nerdtree'
+UnBundle 'scrooloose/syntastic'     "saving is very slow wheh it is installed.
 UnBundle 'spf13/PIV'
 UnBundle 'spf13/vim-colors'
 UnBundle 'spf13/vim-preview'
