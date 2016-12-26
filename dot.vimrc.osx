@@ -19,9 +19,6 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin for autoformat
 "Plugin 'Chiel92/vim-autoformat'
 
-" plugin for indent guides
-Plugin 'nathanaelkane/vim-indent-guides'
-
 " plugin for auto pairs
 "Plugin 'jiangmiao/auto-pairs'
 
@@ -32,8 +29,10 @@ Plugin 'fatih/vim-go'
 "Plugin 'lervag/vimtex'
 
 """"""
+Plugin 'gmarik/vundle'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'rhysd/conflict-marker.vim'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'terryma/vim-multiple-cursors'
@@ -44,6 +43,7 @@ Plugin 'powerline/fonts'
 Plugin 'bling/vim-bufferline'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'mbbill/undotree'
+Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-scripts/restore_view.vim'
 Plugin 'mhinz/vim-signify'
 Plugin 'tpope/vim-abolish.git'
@@ -65,11 +65,9 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'tpope/vim-haml'
-"Plugin 'mattn/emmet-vim'
 Plugin 'cespare/vim-toml'
 Plugin 'quentindecock/vim-cucumber-align-pipes'
 Plugin 'saltstack/salt-vim'
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
