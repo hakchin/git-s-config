@@ -130,11 +130,14 @@ filetype plugin indent on    " required
 " always uses spaces instead of tab characters
 set expandtab
 
+" size of an "indent"
+set shiftwidth=4
+
 " size of a hard tabstop
 set tabstop=4
 
-" size of an "indent"
-set shiftwidth=4
+" ....
+"set softtabstop=4
 
 " highlight search matches
 set hlsearch
