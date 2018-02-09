@@ -21,6 +21,9 @@ brew cask install google-chrome
 brew cask install firefox
 
 #. development
+brew install coreutils  # Install GNU programs on OS X
+# https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
+
 #brew install pgcli
 #brew cask install pgadmin3
 brew cask install github-desktop
@@ -33,16 +36,13 @@ brew install bash
 brew install bash-git-prompt
 
 #. editor
+#brew install vim --with-lua --with-override-system-vi
+#brew install macvim --with-cscope --with-lua
 #brew cask install atom
 #brew cask install brackets
-#brew cask install eclipse-java
-#brew cask install inkscape
-#brew cask install gimp
 brew cask install mactex
 brew cask install texpad
 brew cask install evernote
-brew install vim --with-lua --with-override-system-vi
-brew install macvim --with-cscope --with-lua
 #brew cask install adobe-digital-editions
 brew cask install adobe-creative-cloud
 
