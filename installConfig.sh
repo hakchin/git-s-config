@@ -20,6 +20,9 @@ brew cask install piezo
 brew cask install google-chrome
 brew cask install firefox
 
+#. utils
+brew install rsync
+
 #. development
 brew install coreutils  # Install GNU programs on OS X
 # https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
