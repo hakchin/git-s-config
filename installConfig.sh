@@ -16,7 +16,6 @@ brew cask install dropbox
 brew cask install virtualbox-extension-pack
 brew cask install piezo
 brew cask install expandrive
-brew cask install hyperdock
 
 #. browser
 brew cask install google-chrome
