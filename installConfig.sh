@@ -1,30 +1,30 @@
 #!/bin/sh
 #
-# Brew packages that I use alot.
+#* Brew packages that I use alot.
 #
 #brew install vimpager
 #brew install cliclick
 #brew install pandoc
 
-#. Cloud Storage and Virtual Environment
+#* Cloud Storage and Virtual Environment
 
 #brew cask install xquartz
 #brew cask install hyperdock
 #brew cask install teamviewer
-brew cask install dropbox
+#brew cask install dropbox
 #brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install piezo
 brew cask install expandrive
 
-#. browser
+#* browser
 brew cask install google-chrome
 brew cask install firefox
 
 #. utils
 brew install rsync
 
-#. development
+#* development
 brew install coreutils  # Install GNU programs on OS X
 # https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
 
@@ -33,13 +33,13 @@ brew install coreutils  # Install GNU programs on OS X
 brew cask install github-desktop
 brew cask install iterm2
 brew cask install java
-brew install uncrustify
+#brew install uncrustify
 brew install wget
-brew cask install google-cloud-sdk
-brew install bash
-brew install bash-git-prompt
+#brew cask install google-cloud-sdk
+#brew install bash
+#brew install bash-git-prompt
 
-#. editor
+#* editor
 #brew install vim --with-lua --with-override-system-vi
 #brew install macvim --with-cscope --with-lua
 #brew cask install atom
@@ -50,9 +50,6 @@ brew cask install evernote
 #brew cask install adobe-digital-editions
 brew cask install adobe-creative-cloud
 
-#.. emacs
+#** emacs
 #brew install emacs --HEAD --use-git-head  --with-gnutls --with-rsvg --with-imagemagick --srgb --with-modules
-#brew install jade
-#brew install suggest-emacs
-
-
+brew cask install aquamacs
