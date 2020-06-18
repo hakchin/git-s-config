@@ -30,25 +30,24 @@ brew install coreutils  # Install GNU programs on OS X
 
 #brew install pgcli
 #brew cask install pgadmin3
-brew cask install github-desktop
-brew cask install iterm2
-brew cask install java
-#brew install uncrustify
 brew install wget
+#brew cask install iterm2
+#brew cask install java
+#brew install uncrustify
 #brew cask install google-cloud-sdk
-#brew install bash
-#brew install bash-git-prompt
 
 #* editor
 #brew install vim --with-lua --with-override-system-vi
 #brew install macvim --with-cscope --with-lua
 #brew cask install atom
 #brew cask install brackets
-brew cask install mactex
-brew cask install texpad
+brew cask install mactex#
 brew cask install evernote
 #brew cask install adobe-digital-editions
 brew cask install adobe-creative-cloud
+brew cask install foxitreader
+brew cask install texpad
+
 
 #** emacs
 #brew install emacs --HEAD --use-git-head  --with-gnutls --with-rsvg --with-imagemagick --srgb --with-modules
