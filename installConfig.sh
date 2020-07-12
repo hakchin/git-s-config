@@ -23,6 +23,7 @@ brew cask install firefox
 
 #. utils
 brew install rsync
+brew install poppler # to install pdfunite
 
 #* development
 brew install coreutils  # Install GNU programs on OS X
