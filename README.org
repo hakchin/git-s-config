@@ -1,3 +1,3 @@
-# git-s-config
+* git-s-config
 
 For the various configurations
